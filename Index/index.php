@@ -78,7 +78,7 @@
         </section>
     </aside>
     <main id="wrapper">
-        <h2 id="uitwerking">Uitwerkingen</h2>
+        <h2 id="uitwerking">Uitwerkingen</h2>.
     </main>
 </body>
 </html>

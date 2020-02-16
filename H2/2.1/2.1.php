@@ -15,12 +15,7 @@
 <header>
     <h1><?php echo "Uitwerking van PHP-opdrachten"; ?></h1>
 </header>
-<p id="Hello">
-    <?php
-    echo "Hello World!";
 
-    ?>
-</p>
 <aside>
     <section>
         <h2>Menu</h2>
@@ -87,5 +82,17 @@
 <main id="wrapper">
     <h2 id="uitwerking">Uitwerkingen</h2>
 </main>
+<p id="Hello">
+    <?php
+    echo "Hello World!";
+
+    ?>
+</p> <a href="../../Index/index.php">
+<p id="Hello">
+    <?php
+    echo "terug";
+
+    ?>
+</a></p>
 </body>
 </html>
