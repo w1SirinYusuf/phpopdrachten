@@ -20,3 +20,11 @@ main{
     width:60%;
     float:right;
 }
+#door
+{
+    color:green;
+}
+#stoppen
+{
+    color:red;
+}
