@@ -69,5 +69,12 @@ else
 
 
 ?>
+<a href="../../Index/index.php">
+    <p id="Hello">
+        <?php
+        echo "terug";
+
+        ?>.
+</a></p>
 </body>
 </html>

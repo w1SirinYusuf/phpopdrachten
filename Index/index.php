@@ -39,7 +39,7 @@ include '../includes/header.php';
                         <a href="../H3/3.2.php">Opdracht 3.2</a>
                     </li>
                     <li>
-                        <a href="../H3/3.3.php">Opdracht 3.2</a>
+                        <a href="../H3/3.3.php">Opdracht 3.3</a>
                     </li>
                 </ul>
             </li>
@@ -85,8 +85,11 @@ include '../includes/header.php';
 <main id="wrapper">
     <h2 id="uitwerking">Uitwerkingen</h2>.
 </main>
+<footer>
 <?php
+
 include '../includes/footer.php';
 ?>
+</footer>
 </body>
 </html>
