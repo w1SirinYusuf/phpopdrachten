@@ -53,7 +53,7 @@ include '../includes/header.php';
                         <a href="../H4/4.1/4.1.php">Opdracht 4.1</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 4.2</a>
+                        <a href="../H4/4.2/4.2.php">Opdracht 4.2</a>
                     </li>
                     <li>
                         <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 4.3</a>

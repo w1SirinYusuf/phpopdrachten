@@ -9,6 +9,7 @@
 
 <html>
 <head>
+    <link href="../Index/index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <?php
@@ -88,5 +89,11 @@ include '../includes/header.php';
 <?php
 include '../includes/footer.php';
 ?>
+<a href="../../Index/index.php">
+
+    <?php
+    echo "|Terug";
+
+    ?>
 </body>
 </html>
