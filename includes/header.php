@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link href="../Index/index.css" type="text/css" rel="stylesheet">
+
 </head>
 <body>
 <header>

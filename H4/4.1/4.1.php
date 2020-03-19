@@ -12,7 +12,7 @@
 </head>
 <body>
 <?php
-include '../includes/header.php';
+include '../../includes/header.php';
 ?>
 <aside>
     <section>
@@ -35,6 +35,7 @@ include '../includes/header.php';
                     <li>
                         <a href="../H3/3.1/3.1.php">Opdracht 3.1</a>
                     </li>
+
                     <li>
                         <a href="../H3/3.2.php">Opdracht 3.2</a>
                     </li>
@@ -83,10 +84,26 @@ include '../includes/header.php';
     </section>
 </aside>
 <main id="wrapper">
-    <h2 id="uitwerking">Uitwerkingen</h2>.
+    <h2 id="uitwerking">Uitwerkingen</h2>
+
+    <?php
+
+
+    ?>
+
 </main>
-<?php
-include '../includes/footer.php';
-?>
+<footer>
+    <?php
+
+    include '../../includes/footer.php';
+    ?>
+    <a href="../../Index/index.php">
+
+        <?php
+        echo "|Terug";
+
+        ?>
+    </a>
+</footer>
 </body>
 </html>

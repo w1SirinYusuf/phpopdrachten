@@ -23,10 +23,10 @@
             <li>Hoofdstuk 2
                 <ul>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-1.php">Opdracht 2.1</a>
+                        <a href="../2.1/2.1.php">Opdracht 2.1</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 2.2</a>
+                        <a href="../2.2/2.2.php">Opdracht 2.2</a>
                     </li>
                 </ul>
             </li>
@@ -35,7 +35,14 @@
             <li>Hoofdstuk 3
                 <ul>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-1.php">Opdracht 3.1</a>
+                        <a href="../../H3/3.1/3.1.php">Opdracht 3.1</a>
+                    </li>
+
+                    <li>
+                        <a href="../../H3/3.2.php">Opdracht 3.2</a>
+                    </li>
+                    <li>
+                        <a href="../../H3/3.3.php">Opdracht 3.3</a>
                     </li>
                 </ul>
             </li>
@@ -44,7 +51,7 @@
             <li>Hoofdstuk 4
                 <ul>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-1.php">Opdracht 4.1</a>
+                        <a href="../H4/4.1/4.1.php">Opdracht 4.1</a>
                     </li>
                     <li>
                         <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 4.2</a>
