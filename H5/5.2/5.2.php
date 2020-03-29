@@ -1,5 +1,6 @@
 
 
+
 <?php
 /**
  * User: Yusuf Sirin
@@ -19,7 +20,7 @@ include '../../includes/header.php';
 ?>
 <aside>
     <section>
-        <h2>Menu</h2>
+        <h2>HoofdMenu</h2>
         <ul>
             <li>Hoofdstuk 2
                 <ul>
@@ -61,7 +62,7 @@ include '../../includes/header.php';
                         <a href="../../H4/4.3/4.3.php">Opdracht 4.3</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 4.4</a>
+                        <a href="../../H4/4.4/4.4.php">Opdracht 4.4</a>
                     </li>
                 </ul>
             </li>
@@ -88,48 +89,48 @@ include '../../includes/header.php';
 </aside>
 <main id="wrapper">
     <h2 id="uitwerking">Uitwerkingen</h2>
-
-
-    <?php
-    $evenement ="Elfstedentocht";
-    $Fries= "Alvestêdetocht";
-    $afstand= "200 KM";
-    $soort = "schaatstocht";
-    $omgeving = "natuurijs";
-    $organisatie = "Koninklijke Vereniging De Friesche Elf Steden.";
-    $plaats = "Friesland";
-    $Beginplaats = "Leeuwarden";
-    $aantal ="15 keer";
-    $firsttime= "1909";
-    $maximaal = "1 keer per winter";
-    //De Elfstedentocht (Fries: Alvestêdetocht) is een 200 kilometer
-    //lange schaatstocht over natuurijs die wordt georganiseerd door
-    //de Koninklijke Vereniging De Friesche Elf Steden. Leeuwarden,
-    //de hoofdstad van Friesland, is start- en aankomstplaats. De
-    //Elfstedentocht is inmiddels 15 maal verreden en werd voor het
-    //eerst in 1909 gereden en wordt maximaal 1 keer per winter
-    //gehouden.
-    $verhaal =  "De" . " " . $evenement . " " . "(Fries:" . " ". $Fries . " " . "is een" . $afstand . " ". "kilometer lange" .
-        " " . $soort . " " . "over" . $omgeving . " ". "die wordt georganiseerd door" . " " .$organisatie . " " . $Beginplaats ."de " . "hoofdstad van " .
-        $plaats . ", is start- en aankomstplaats."  . " " . "De" . " " . $evenement . " " . "is inmiddels " .  $aantal . "maal verreden en werd voor het eerst in" . " " .
-        $firsttime . " " . "gereden en wordt maximaal " . " " . $maximaal . " " . "gehouden";
-
-    echo "<p> $verhaal </p> ";
-
-    $verhaal2 = "Er zat geen verschil tussen de manier hoe ik het deed en hoe hun het deden.";
-
-    echo " <br> <p> $verhaal2 </p> ";
-    ?>
-
-    </p> <a href="../../Index/index.php">
-        <p id="Hello">
-            <?php
-            echo "terug";
-
-            ?>
-    </a></p>
-
-
+    <h1>Uitschrijfformulier KW1C</h1>
+    <hr>
+    <form action="invullen.php" method="get">
+        <table>
+            <tr>
+                <td>Voor en achternaam</td>
+                <td><input type="text" name="fullName"></td>
+            </tr>
+            <tr>
+                <td>Studentennummer</td>
+                <td><input type="number" name="studentNumber"></td>
+            </tr>
+            <tr>
+                <td>Datum van uitschrijving</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td>Reden van uitschrijven</td>
+                <td>
+                    <select name="reason">
+                        <option value="Verkeerde keuze">Verkeerde keuze</option>
+                        <option value="Saaie lessen">Saaie lessen</option>
+                        <option value="Slechte docent">Slechte docent</option>
+                        <option value="Stom onderwerp">Stom onderwerp</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Leerjaar</td>
+                <td>
+                    <input type="radio" name="year" value="1e leerjaar">1e leerjaar<br>
+                    <input type="radio" name="year" value="2e leerjaar">2e leerjaar<br>
+                    <input type="radio" name="year" value="3e leerjaar">3e leerjaar
+                </td>
+            </tr>
+        </table>
+        <input type="checkbox" name="apply" value="Ja">Ik wil me aanmelden bij de succesklas<br>
+        <input type="checkbox" name="delete" value="Ja">Ik wil mijn gegevens uit het systeem<br>
+        <p>Geef hieronder de reden van je uitschrijving op</p>
+        <textarea name="description"></textarea><br>
+        <input type="submit" value="Versturen">
+    </form>
 
 </main>
 <footer>
