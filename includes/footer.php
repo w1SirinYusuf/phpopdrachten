@@ -1,5 +1,6 @@
 
 <footer id="Footer">
+
     <?php
     include 'variabelen.php';
     //4.1

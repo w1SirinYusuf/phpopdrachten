@@ -56,13 +56,13 @@
                         <a href=../H4/4.1/4.1.php">Opdracht 4.1</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 4.2</a>
+                        <a href="../../H4/4.2/4.2.php">Opdracht 4.2</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 4.3</a>
+                        <a href="../../H4/4.3/4.3.php">Opdracht 4.3</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 4.4</a>
+                        <a href="../../H4/4.4/4.4.php">Opdracht 4.4</a>
                     </li>
                 </ul>
             </li>

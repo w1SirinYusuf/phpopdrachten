@@ -1,15 +1,6 @@
 
 
-<?php
-/**
- * User: Yusuf Sirin
- * Date: 5-03-2020
- * Time:  PM
- * File: 3.3 php
- */
-?>
-
-<html>
+<html >
 <head>
     <link href="../../Index/index.css" type="text/css" rel="stylesheet">
 </head>
@@ -19,7 +10,7 @@ include '../../includes/header.php';
 ?>
 <aside>
     <section>
-        <h2>Menu</h2>
+        <h2>HoofdMenu</h2>
         <ul>
             <li>Hoofdstuk 2
                 <ul>
@@ -61,7 +52,7 @@ include '../../includes/header.php';
                         <a href="../../H4/4.3/4.3.php">Opdracht 4.3</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 4.4</a>
+                        <a href="../../H4/4.4/4.4.php">Opdracht 4.4</a>
                     </li>
                 </ul>
             </li>
@@ -89,47 +80,77 @@ include '../../includes/header.php';
 <main id="wrapper">
     <h2 id="uitwerking">Uitwerkingen</h2>
 
-
     <?php
-    $evenement ="Elfstedentocht";
-    $Fries= "Alvestêdetocht";
-    $afstand= "200 KM";
-    $soort = "schaatstocht";
-    $omgeving = "natuurijs";
-    $organisatie = "Koninklijke Vereniging De Friesche Elf Steden.";
-    $plaats = "Friesland";
-    $Beginplaats = "Leeuwarden";
-    $aantal ="15 keer";
-    $firsttime= "1909";
-    $maximaal = "1 keer per winter";
-    //De Elfstedentocht (Fries: Alvestêdetocht) is een 200 kilometer
-    //lange schaatstocht over natuurijs die wordt georganiseerd door
-    //de Koninklijke Vereniging De Friesche Elf Steden. Leeuwarden,
-    //de hoofdstad van Friesland, is start- en aankomstplaats. De
-    //Elfstedentocht is inmiddels 15 maal verreden en werd voor het
-    //eerst in 1909 gereden en wordt maximaal 1 keer per winter
-    //gehouden.
-    $verhaal =  "De" . " " . $evenement . " " . "(Fries:" . " ". $Fries . " " . "is een" . $afstand . " ". "kilometer lange" .
-        " " . $soort . " " . "over" . $omgeving . " ". "die wordt georganiseerd door" . " " .$organisatie . " " . $Beginplaats ."de " . "hoofdstad van " .
-        $plaats . ", is start- en aankomstplaats."  . " " . "De" . " " . $evenement . " " . "is inmiddels " .  $aantal . "maal verreden en werd voor het eerst in" . " " .
-        $firsttime . " " . "gereden en wordt maximaal " . " " . $maximaal . " " . "gehouden";
 
-    echo "<p> $verhaal </p> ";
+//---de date() functie kun je een tweede parameter doorgeven waarmee je aangeeft welke
+//---dag je wil hebben. Als je geen tweede parameter doorgeeft dan is het de datum van Vandaag
+//
+//$datum = date('d-m-Y);
+//echo $datum;
 
-    $verhaal2 = "Er zat geen verschil tussen de manier hoe ik het deed en hoe hun het deden.";
 
-    echo " <br> <p> $verhaal2 </p> ";
+// --- MET de strtotime() functie kunnen we een datum in
+// ---string formaat omzetten naar een getalswaarde (timestamp).
+//
+//$dag0 = strtotime('now');
+//echo "<br> $dag0";
+// En vervolgens kunnen we dat getal ook doorgeven aan de date() functie
+//$vandaag = date('d-m-Y', $dag0);
+//echo "<br>".$vandaag;
+
+// -- -DAG +1 TOEVOEGEN HEO DOE JE DAT?
+//
+//$datumAlsGetal = strtotime('+2 days');
+//echo $datumAlsGetal;
+////En vervolgens kunnen we dat getal ook doorgeven aan de date() functie
+//$morgen = date('d-m-Y', $datumAlsGetal);
+//echo "<br>".$morgen;
+
+
+//for ($tel = 0; $tel < 7; $tel++) {
+//    $datumAlsGetal = strtotime("+$tel days");
+//    echo "<br>";
+//    echo "Dit is dag  " . " ";
+//
+//    echo date('w', $datumAlsGetal);
+//    echo " dat is ";
+//    echo date('l', $datumAlsGetal);
+//    echo date('d-m-Y', $datumAlsGetal);
+
+
+//$dagNamen = array("zondag", "maandag" ,"dinsdag" ,"woensdag", "donderdag",
+//    "vrijdag", "zaterdag");
+//for ($tel = 0; $tel <7 ; $tel++)
+//{
+//    $datumAlsGetal = strtotime("+$tel days");
+//    echo "<br>";
+//    echo date('d-m-Y', $datumAlsGetal);
+//    echo " en dit is dagnummer ";
+//    echo date('w', $datumAlsGetal);
+//    echo " in deze week";
+//    echo "<br> dagnummer $dagnummer is een ".$dagNamen[$dagnummer];
+//}
+//
+
+$nu = strtotime("now");
+$datumVandaag = date('d-m-Y', $nu);
+$datumDag = date('w', $nu);
+
+$dagenWeek = array("zondag", "mandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag");
+
+
+$morgen = strtotime("+1 days");
+$datumMorgen = date('d-m-Y', $morgen);
+$datumDagMorgen = date('w', $morgen);
+
+for ($i = 0; $i<7 ; $i++) {
+    $now = strtotime("+" . $i . " days");
+    $datumVandaag = date('d-m-Y', $now);
+    $datumDag = date('w', $nu);
+    echo "<br>Dag " . $i . " is een " . $dagenWeek[$i] . " en de datum is " . $datumVandaag;
+
+}
     ?>
-
-    </p> <a href="../../Index/index.php">
-        <p id="Hello">
-            <?php
-            echo "terug";
-
-            ?>
-    </a></p>
-
-
 
 </main>
 <footer>
@@ -140,3 +161,6 @@ include '../../includes/header.php';
 </footer>
 </body>
 </html>
+
+
+
