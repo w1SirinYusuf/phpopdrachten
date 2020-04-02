@@ -2,10 +2,10 @@
 //while loop1
 
 $task2 ="Lancering in:  " ; //stap1 variabele waarde geven
-echo "$task2";             // !!opdracht zegt geen echo maar ik heb het wel overal
+            // !!opdracht zegt geen echo maar ik heb het wel overal
 $counter1 = 20;
 while($counter1 >= 0) {
-    echo "$counter1, ";      // !!
+    $task2 = $task2 ."$counter1, ";      //  alles moet op deze manier gaan eigenlijk
     $counter1 = $counter1 -1;
 }
 //for loop 1
@@ -21,7 +21,7 @@ $task4 = " ";
 $counter3 = 1;
 while($counter3 <= 6)
 {
-    echo "<h$counter3> <br> Dit is de $counter3 e iteratie.</h$task4> ";  // moet steeds kleiener worden met h1 etc
+   // echo "<h$counter3> <br> Dit is de $counter3 e iteratie.</h$task4> ";  // moet steeds kleiener worden met h1 etc
     $counter3 ++;
 
 
@@ -85,4 +85,8 @@ while($counter5 >= 2002) {
 // 2. de laatste stap met het leven fases kon zeker makkelijker ben ik van mening maar hoe zou dat dan moeten?
 // als u kan antwoorden I am thankfull :)
 
+//antwoord bij 1 doe je i.pv echo doe je dan (naamvariabele) = (naamvariabele) . "wat je erbij wilt zetten
+//In dit geval dus bv bij task2 doe je dan    $task2 = $task2 ."$counter1, ";
+
+//antwoord bij 2 zo is het ook wel goed
 ?>

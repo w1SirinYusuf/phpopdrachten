@@ -136,7 +136,7 @@ $nu = strtotime("now");
 $datumVandaag = date('d-m-Y', $nu);
 $datumDag = date('w', $nu);
 
-$dagenWeek = array("zondag", "mandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag");
+$dagenWeek = array("zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag");
 
 
 $morgen = strtotime("+1 days");

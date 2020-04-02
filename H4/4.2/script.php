@@ -1,5 +1,5 @@
 <?php
-$courseName= "MYSQL";
+$courseName= "PHP";
 $teacherName= " ";
 
 switch($courseName)
