@@ -67,10 +67,10 @@ include '../../includes/header.php';
                         <a href="../../H5/5.2/5.2.php">Opdracht 5.2</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 5.3</a>
+                        <a href="../../H5/5.3/opdracht53.php">Opdracht 5.3</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 5.4</a>
+                        <a href="../../H5/5.4/5.4.php">Opdracht 5.4</a>
                     </li>
                 </ul>
             </li>
@@ -134,19 +134,12 @@ include '../../includes/header.php';
 
 $nu = strtotime("now");
 $datumVandaag = date('d-m-Y', $nu);
-$datumDag = date('w', $nu);
 
 $dagenWeek = array("zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag");
-
-
-$morgen = strtotime("+1 days");
-$datumMorgen = date('d-m-Y', $morgen);
-$datumDagMorgen = date('w', $morgen);
 
 for ($i = 0; $i<7 ; $i++) {
     $now = strtotime("+" . $i . " days");
     $datumVandaag = date('d-m-Y', $now);
-    $datumDag = date('w', $nu);
     echo "<br>Dag " . $i . " is een " . $dagenWeek[$i] . " en de datum is " . $datumVandaag;
 
 }

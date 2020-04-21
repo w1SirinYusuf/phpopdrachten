@@ -1,9 +1,9 @@
 
 <h2>Uitschrijfformullier KW1C</h2>
 <hr>
-<table style="border-collapse: collapse">
+<table>
     <?php
-    if(empty($_GET) == false)
+    if(empty($_GET) == false)//emppty =het controleerd of de variabele leeg is ofniet,false geeftie terug als het dus vol is
     {
         $userFullName = $_GET["fullName"];
         echo("<tr><td style='font-style: italic'>Voor en achternaam:</td><td>" . $userFullName . "</td></tr>");
@@ -20,18 +20,18 @@
         $userYear = $_GET["year"];
         echo("<tr><td style='font-style: italic'>Leerjaar</td><td>" . $userYear . "</td></tr>");
 
-        if (isset($_GET["apply"]) == true && $_GET["apply"] == "Ja") {
-            echo("<tr><td style='font-style: italic'>Aanmelden bij de succesklas:</td><td>JA</td>");
+        if (isset($_GET["apply"]) == true && $_GET["apply"] == "Ja") { //isset kijkt of een variabele bestaat en datie niet leeg is
+            echo("<tr><td style='font-style: italic'>Aanmelden bij de succesklas:</td><td>ja</td>");
         }
         else {
-            echo("<tr><td style='font-style: italic'>Aanmelden bij de succesklas:</td><td>NEE</td>");
+            echo("<tr><td style='font-style: italic'>Aanmelden bij de succesklas:</td><td>nee</td>");
         }
 
         if (isset($_GET["delete"]) == true && $_GET["delete"] == "Ja") {
-            echo("<tr><td style='font-style: italic'>Verwijderen gegevens:</td><td>JA</td>");
+            echo("<tr><td style='font-style: italic'>Verwijderen gegevens:</td><td>ja</td>");
         }
         else {
-            echo("<tr><td style='font-style: italic'>Verwijderen gegevens:</td><td>NEE</td>");
+            echo("<tr><td style='font-style: italic'>Verwijderen gegevens:</td><td>nee</td>");
         }
 
         $userDescription = $_GET["description"];

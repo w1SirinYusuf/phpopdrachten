@@ -1,5 +1,6 @@
 
 
+
 <?php
 /**
  * User: Yusuf Sirin
@@ -19,7 +20,7 @@ include '../../includes/header.php';
 ?>
 <aside>
     <section>
-        <h2>Menu</h2>
+        <h2>HoofdMenu</h2>
         <ul>
             <li>Hoofdstuk 2
                 <ul>
@@ -79,7 +80,7 @@ include '../../includes/header.php';
                         <a href="../../H5/5.3/opdracht53.php">Opdracht 5.3</a>
                     </li>
                     <li>
-                        <a href="../../H5/5.4/5.4.php">Opdracht 5.4</a>
+                        <a href="../5.4/5.4.php">Opdracht 5.4</a>
                     </li>
                 </ul>
             </li>
@@ -88,48 +89,46 @@ include '../../includes/header.php';
 </aside>
 <main id="wrapper">
     <h2 id="uitwerking">Uitwerkingen</h2>
+    <h1>Corona enquete:</h1>
+    <hr>
+    <form action="form_data53.php" method="Post">
+        <table>
+            <tr>
+                <td>Wat is je naam:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>wat is je leeftijd:</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+            <tr>
+                <td>Gemeente</td>
+                <td> <select name="Township">
+                        <option value="DenBosch">DenBosch</option>
+                        <option value="Leerdam">Leerdam</option>
+                        <option value="Gorinchem">Gorinchem</option>
+                        <option value="Eindhoven">Eindhoven</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Aantal inwoners per gemeente:</td>
+                <td><input type="number" name="citizens"></td>
+            </tr>
+            <tr>
+                <td>Ken je mensen die besmet zijn in je woonplaats></td>
+                <td>
+                    <input type="radio" name="infected" value="yes"> Ja<br>
+                    <input type="radio" name="infected" value="no"> Nee<br>
 
-
-    <?php
-    $evenement ="Elfstedentocht";
-    $Fries= "Alvestêdetocht";
-    $afstand= "200 KM";
-    $soort = "schaatstocht";
-    $omgeving = "natuurijs";
-    $organisatie = "Koninklijke Vereniging De Friesche Elf Steden.";
-    $plaats = "Friesland";
-    $Beginplaats = "Leeuwarden";
-    $aantal ="15 keer";
-    $firsttime= "1909";
-    $maximaal = "1 keer per winter";
-    //De Elfstedentocht (Fries: Alvestêdetocht) is een 200 kilometer
-    //lange schaatstocht over natuurijs die wordt georganiseerd door
-    //de Koninklijke Vereniging De Friesche Elf Steden. Leeuwarden,
-    //de hoofdstad van Friesland, is start- en aankomstplaats. De
-    //Elfstedentocht is inmiddels 15 maal verreden en werd voor het
-    //eerst in 1909 gereden en wordt maximaal 1 keer per winter
-    //gehouden.
-    $verhaal =  "De" . " " . $evenement . " " . "(Fries:" . " ". $Fries . " " . "is een" . $afstand . " ". "kilometer lange" .
-        " " . $soort . " " . "over" . $omgeving . " ". "die wordt georganiseerd door" . " " .$organisatie . " " . $Beginplaats ."de " . "hoofdstad van " .
-        $plaats . ", is start- en aankomstplaats."  . " " . "De" . " " . $evenement . " " . "is inmiddels " .  $aantal . "maal verreden en werd voor het eerst in" . " " .
-        $firsttime . " " . "gereden en wordt maximaal " . " " . $maximaal . " " . "gehouden";
-
-    echo "<p> $verhaal </p> ";
-
-    $verhaal2 = "Er zat geen verschil tussen de manier hoe ik het deed en hoe hun het deden.";
-
-    echo " <br> <p> $verhaal2 </p> ";
-    ?>
-
-    </p> <a href="../../Index/index.php">
-        <p id="Hello">
-            <?php
-            echo "terug";
-
-            ?>
-    </a></p>
-
-
+                </td>
+            </tr>
+            <tr>
+                <td>Aantal mensen besmet in je gemeente?</td>
+                <td><input type="number" name="value"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Versturen">
+    </form>
 
 </main>
 <footer>
