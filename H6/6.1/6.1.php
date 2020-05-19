@@ -24,7 +24,7 @@ if (isset($_GET['submit'])) {
 echo "<h2>Login formulier</h2>";
 
 echo
-"<form method='get' action='welkom.php'>
+"<form method='Post' action='welkom.php'>
                 <table>
                     <tr>
                         <td><label>Username</label></td>

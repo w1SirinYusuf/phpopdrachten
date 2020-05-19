@@ -68,13 +68,13 @@ include '../includes/header.php';
             <li>Hoofdstuk 5
                 <ul>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-1.php">Opdracht 5.1</a>
+                        <a href="../H5/5.1/5.1.php">Opdracht 5.1</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 5.2</a>
+                        <a href="../H5/5.2/5.2.php">Opdracht 5.2</a>
                     </li>
                     <li>
-                        <a href="hoofdstuk2/opdracht_2-2.php">Opdracht 5.3</a>
+                        <a href="../H5/5.3/opdracht53.php">Opdracht 5.3</a>
                     </li>
                     <li>
                         <a href="../H5/5.4/5.4.php">Opdracht 5.4</a>
@@ -82,6 +82,24 @@ include '../includes/header.php';
                 </ul>
             </li>
         </ul>
+        <li>Hoofdstuk 6
+            <ul>
+                <li>
+                    <a href="../H6/6.1/6.1.php">Opdracht 6.1</a>
+                </li>
+                <li>
+                    <a href="../H6/6.2/6.2.php">Opdracht 6.2</a>
+                </li>
+            </ul>
+        </li>
+        <li>Hoofdstuk 7
+            <ul>
+                <li>
+                    <a href="../H7/7.1%20&%207.2.php">Opdracht 7.1 & 7.2</a>
+                </li>
+            </ul>
+        </li>
+
     </section>
 </aside>
 <main id="wrapper">

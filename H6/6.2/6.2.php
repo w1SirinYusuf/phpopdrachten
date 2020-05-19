@@ -23,7 +23,7 @@ if (isset($_GET['submit'])) {
 
 echo "<h2>Login formulier</h2>";
 echo
-"<form method='get' action='opdracht6.2.php'>
+"<form method='get' action='welkomcookie.php'>
                 <table>
                     <tr>
                         <td><label>Username</label></td>
